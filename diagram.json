@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "author": "Wesley R.",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 54, "left": -140.2, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 102,
+      "left": -140.2,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 150,
+      "left": -140.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -3.4,
+      "left": -105.6,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 215.15,
+      "left": -124.8,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 234.35,
+      "left": -124.8,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 253.55,
+      "left": -124.8,
+      "attrs": { "value": "330" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP5", "btn1:2.r", "green", [ "h-15.65", "v-41.65" ] ],
+    [ "pico:GND.1", "btn1:1.r", "black", [ "h-15.65", "v-22.45" ] ],
+    [ "led1:A", "pico:GP11", "green", [ "v9.6", "h38.4", "v28.8" ] ],
+    [ "led2:A", "pico:GP12", "green", [ "v0" ] ],
+    [ "led3:A", "pico:GP13", "green", [ "v0", "h38.4", "v-38.4" ] ],
+    [ "pico:GND.4", "r1:2", "black", [ "h-63.65", "v44.79", "h-8.4" ] ],
+    [ "pico:GND.4", "r2:2", "black", [ "h-63.65", "v63.99" ] ],
+    [ "pico:GND.4", "r3:2", "black", [ "h-63.65", "v83.19" ] ],
+    [ "r1:1", "led1:C", "green", [ "v0", "h-38.4", "v-124.8" ] ],
+    [ "r2:1", "led2:C", "green", [ "v0", "h-38.4", "v-96" ] ],
+    [ "r3:1", "led3:C", "green", [ "v0", "h-38.4", "v-67.2" ] ]
+  ],
+  "dependencies": {}
+}
