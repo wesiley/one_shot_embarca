@@ -62,9 +62,9 @@ Este projeto faz com que ascenda os 3 LED(azul,vermelho e verde) em apenas um di
 
 }
   ```
-O loop while (true) garante execução contínua. A primeira condição IF tem como objetivo fazer o debounce que faz controle de corrente ao clicar no pushbutton. A segunda condição serve para chamar as interrupções apenas qyuando clicar no pushbutton e todos os Leds estiverem desligados.led_active = true é para indicar que os Leds vao ligar. add_alarm_in_ms interrupção que chama uma função e dispara em um tempo definido. sleep_ms(10) para apos 10 milisegundos voltar ao inicio do loop.
+O loop while (true) garante execução contínua. A primeira condição IF tem como objetivo fazer o debounce que faz controle de corrente ao clicar no pushbutton. A segunda condição serve para chamar os temporizadores apenas quando clicar no pushbutton e todos os Leds estiverem desligados. led_active = true é para indicar que os Leds vao ligar. add_alarm_in_ms temporizador que chama uma função e dispara em um tempo definido. sleep_ms(10) para apos 10 milisegundos voltar ao inicio do loop.
 
-## Funcionamento da interrupção.
+## Funcionamento do Temporizador.
 ```
 int64_t turn_off_callback(alarm_id_t id, void *user_data) {
  
@@ -92,7 +92,7 @@ int64_t turn_off_callback3(alarm_id_t id, void *user_data) {
 }
 
   ```
-as funções turn_off_callback, turn_off_callback2 e turn_off_callback3 são interrupções que tem como função desligar cada Led e retornar um valor.
+as funções turn_off_callback, turn_off_callback2 e turn_off_callback3 são temporizadores que tem como função desligar cada Led e retornar um valor.
 
 ## Diagrama de Conexões 💡:
 
