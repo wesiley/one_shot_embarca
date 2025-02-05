@@ -4,10 +4,9 @@ Este projeto faz com que ascenda os 3 LED(azul,vermelho e verde) em apenas um di
 ## Hardware 🛠️
 
 - Microcontrolador RP2040 (Raspberry Pi Pico).
-- PushButton.
-- Resistores.
+- 1 PushButton.
 - 3 LEDs.
-- 03 Resistores de 330 Ω. 
+- 3 Resistores de 330 Ω. 
 
 ## Software 💻
 
