@@ -6,7 +6,8 @@ Este projeto faz com que ascenda os 3 LED(azul,vermelho e verde) em apenas um di
 - Microcontrolador RP2040 (Raspberry Pi Pico).
 - 1 PushButton.
 - 3 LEDs.
-- 3 Resistores de 330 Ω. 
+- 3 Resistores de 330 Ω.
+- Placa educacional BitDogLab.
 
 ## Software 💻
 
@@ -23,9 +24,6 @@ Este projeto faz com que ascenda os 3 LED(azul,vermelho e verde) em apenas um di
 - **`diagram.json`:** projeta a simulação do semaforo.
 - **`wokwi.toml`:** configuração para sicronizar o código a simulação.
 
-
-
-
 ## Como Compilar e Executar ⚙️
 
 1. **Instale o SDK do Raspberry Pi Pico:** Siga as instruções no site oficial do Raspberry Pi.
@@ -33,7 +31,6 @@ Este projeto faz com que ascenda os 3 LED(azul,vermelho e verde) em apenas um di
 3. **Navegue até o diretório do projeto:** `cd One_shot`
 4. **Compile o projeto:** `cmake -B build && cmake --build build`
 5. **Copie para o Pico:** Copie o conteúdo da pasta `build` (gerada após a compilação) para o Raspberry Pi Pico. O programa iniciará automaticamente.
-
 
 ## Funcionamento do Loop Principal 🔄 
 ```
