@@ -49,7 +49,7 @@ Este projeto faz com que ascenda os 3 LED(azul,vermelho e verde) em apenas um di
 
 
                 led_active = true;
-                //  add_repeating_timer_ms(1000, repeating_timer_callback, NULL, &timer);
+                
                 add_alarm_in_ms(3000, turn_off_callback, NULL, false);
                 add_alarm_in_ms(4000, turn_off_callback2, NULL, false);
                 add_alarm_in_ms(5000, turn_off_callback3, NULL, false);
