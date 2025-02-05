@@ -10,14 +10,8 @@
       "left": 0,
       "attrs": { "builder": "pico-sdk" }
     },
-    { "type": "wokwi-led", "id": "led1", "top": 54, "left": -140.2, "attrs": { "color": "red" } },
-    {
-      "type": "wokwi-led",
-      "id": "led2",
-      "top": 102,
-      "left": -140.2,
-      "attrs": { "color": "yellow" }
-    },
+    { "type": "wokwi-led", "id": "led1", "top": 54, "left": -140.2, "attrs": { "color": "blue" } },
+    { "type": "wokwi-led", "id": "led2", "top": 102, "left": -140.2, "attrs": { "color": "red" } },
     {
       "type": "wokwi-led",
       "id": "led3",
